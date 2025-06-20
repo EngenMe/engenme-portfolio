@@ -1,21 +1,37 @@
 export default function Home() {
-  return (
-      <div className="p-8">
-        <h1 className="text-2xl mb-4">Color Test</h1>
+    return (
+        <div className="p-8 space-y-8">
+            {/* Test Inter font */}
+            <div>
+                <h2 className="text-2xl font-bold mb-2">Inter Font Test</h2>
+                <p className="font-sans text-lg">
+                    The quick brown fox jumps over the lazy dog. 123456789
+                </p>
+                <p style={{ fontFamily: 'Times, serif' }} className="text-lg text-gray-500">
+                    Compare with Times (serif) - should look different
+                </p>
+            </div>
 
-        {/* Test basic colors first */}
-        <button className="bg-blue-500 text-white px-4 py-2 rounded mr-4">
-          Basic Blue
-        </button>
+            {/* Test JetBrains Mono */}
+            <div>
+                <h2 className="text-2xl font-bold mb-2">JetBrains Mono Test</h2>
+                <code className="font-mono text-lg block bg-gray-100 p-4">
+                    const hello = "world";
+                </code>
+                <code style={{ fontFamily: 'Courier, monospace' }} className="block text-gray-500 text-lg mt-2">
+                    const hello = "world"; // Compare with Courier
+                </code>
+            </div>
 
-        {/* Test custom colors */}
-        <button className="bg-primary-50 text-primary-900 px-4 py-2 rounded border border-primary-200">
-          Custom Primary Light
-        </button>
-
-        <button className="bg-primary-600 text-white px-4 py-2 rounded ml-4">
-          Custom Primary Dark
-        </button>
-      </div>
-  );
+            {/* Font weight test */}
+            <div>
+                <h2 className="text-2xl font-bold mb-2">Font Weight Test</h2>
+                <p className="font-sans font-light">Light weight (300)</p>
+                <p className="font-sans font-normal">Normal weight (400)</p>
+                <p className="font-sans font-medium">Medium weight (500)</p>
+                <p className="font-sans font-semibold">Semibold weight (600)</p>
+                <p className="font-sans font-bold">Bold weight (700)</p>
+            </div>
+        </div>
+    );
 }
