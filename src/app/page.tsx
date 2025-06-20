@@ -15,12 +15,6 @@ export default function Home() {
             {/* Test JetBrains Mono */}
             <div>
                 <h2 className="text-2xl font-bold mb-2">JetBrains Mono Test</h2>
-                <code className="font-mono text-lg block bg-gray-100 p-4">
-                    const hello = "world";
-                </code>
-                <code style={{ fontFamily: 'Courier, monospace' }} className="block text-gray-500 text-lg mt-2">
-                    const hello = "world"; // Compare with Courier
-                </code>
             </div>
 
             {/* Font weight test */}
